@@ -76,9 +76,9 @@ storm jar path/to/allmycode.jar org.me.MyTopology arg1 arg2 arg3
 当然，你也可以通过查看在工作节点机器上的日志信息来了解拓扑运行情况。
 
 
-[1]: https://github.com/weyo/Storm-Documents/blob/master/Manual/zh/Local-Mode.md
+[1]: /Manual/zh/Local-Mode.md
 [2]: http://storm.apache.org/javadoc/apidocs/backtype/storm/topology/TopologyBuilder.html
 [3]: http://storm.apache.org/javadoc/apidocs/backtype/storm/StormSubmitter.html
 [4]: http://maven.apache.org/plugins/maven-assembly-plugin/
-[5]: http://storm.apache.org/javadoc/apidocs/backtype/storm/Config.html
-[6]: https://github.com/weyo/Storm-Documents/blob/master/Manual/zh/Guaranteeing-Message-Processing.md
+[5]: http://storm.apache.org/releases/0.9.6/javadocs/backtype/storm/Config.html
+[6]: /Manual/zh/Guaranteeing-Message-Processing.md

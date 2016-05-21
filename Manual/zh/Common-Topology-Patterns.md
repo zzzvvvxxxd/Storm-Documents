@@ -96,7 +96,7 @@ builder.setBolt("merge", new MergeRanksObjects())
 如果需要了解更多内容请参考[分布式RPC][7]一文。
 
 
-[1]: https://github.com/weyo/Storm-Documents/blob/master/Manual/zh/Guaranteeing-Message-Processing.md
+[1]: /Manual/zh/Guaranteeing-Message-Processing.md
 [2]: https://github.com/apache/storm/blob/master/examples/storm-starter/src/jvm/storm/starter/RollingTopWords.java
 [3]: https://github.com/apache/storm/blob/master/examples/storm-starter/src/jvm/storm/starter/SkewedRollingTopWords.java
 [4]: http://storm.apache.org/javadoc/apidocs/backtype/storm/utils/TimeCacheMap.html

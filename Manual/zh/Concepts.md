@@ -122,11 +122,11 @@ Storm 可以通过拓扑来确保每个发送的元组都能得到正确处理�
 
 ---
 
-[1]: http://storm.apache.org/javadoc/apidocs/backtype/storm/topology/TopologyBuilder.html
-[2]: https://github.com/weyo/Storm-Documents/blob/master/Manual/zh/Running-Topologies-On-A-Production-Cluster.md
-[3]: https://github.com/weyo/Storm-Documents/blob/master/Manual/zh/Local-Mode.md
+[1]: http://storm.apache.org/releases/0.9.6/javadocs/backtype/storm/topology/TopologyBuilder.html
+[2]: /Manual/zh/Running-Topologies-On-A-Production-Cluster.md
+[3]: /Manual/zh/Local-Mode.md
 [4]: http://storm.apache.org/javadoc/apidocs/backtype/storm/topology/OutputFieldsDeclarer.html
-[5]: https://github.com/weyo/Storm-Documents/blob/master/Manual/zh/Serialization.md
+[5]: /Manual/zh/Serialization.md
 [6]: http://storm.apache.org/javadoc/apidocs/backtype/storm/serialization/ISerialization.html
 [7]: http://storm.apache.org/javadoc/apidocs/backtype/storm/Config.html#TOPOLOGY_SERIALIZATIONS
 [8]: http://storm.apache.org/javadoc/apidocs/backtype/storm/spout/SpoutOutputCollector.html
@@ -143,4 +143,4 @@ Storm 可以通过拓扑来确保每个发送的元组都能得到正确处理�
 [19]: http://storm.apache.org/javadoc/apidocs/backtype/storm/task/TopologyContext.html
 [20]: http://storm.apache.org/javadoc/apidocs/backtype/storm/task/CoordinatedBolt.html
 [21]: http://storm.apache.org/javadoc/apidocs/backtype/storm/Config.html#TOPOLOGY_WORKERS
-[22]: https://github.com/weyo/Storm-Documents/blob/master/Manual/zh/Troubleshooting.md
+[22]: /Manual/zh/Troubleshooting.md

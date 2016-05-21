@@ -99,9 +99,9 @@ Storm 中支持的命令包括：
 启动 DRPC 后台进程。该命令应该在 [daemontools][3] 或者 [monit][4] 这样的工具监控下执行。详细信息请参考[分布式 RPC][6]一文。
 
 
-[1]: https://github.com/weyo/Storm-Documents/blob/master/Manual/zh/Setting-Up-A-Development-Environment.md
+[1]: /Manual/zh/Setting-Up-A-Development-Environment.md
 [2]: http://storm.apache.org/javadoc/apidocs/backtype/storm/StormSubmitter.html
 [3]: http://cr.yp.to/daemontools.html
 [4]: http://mmonit.com/monit/
-[5]: https://github.com/weyo/Storm-Documents/blob/master/Manual/zh/Setting-Up-A-Storm-Cluster.md
-[6]: https://github.com/weyo/Storm-Documents/blob/master/Manual/zh/Distributed-RPC.md
+[5]: /Manual/zh/Setting-Up-A-Storm-Cluster.md
+[6]: /Manual/zh/Distributed-RPC.md

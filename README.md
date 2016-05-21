@@ -84,35 +84,35 @@
 <sup>5</sup> 该文官方文档暂未提供。  
 
 
-[1]: http://storm.apache.org/javadoc/apidocs/index.html
+[1]: http://storm.apache.org/releases/0.9.6/javadocs/index.html
 [2]: /Manual/zh/Concepts.md
-[3]: https://github.com/weyo/Storm-Documents/blob/master/Manual/zh/Configuration.md
-[4]: https://github.com/weyo/Storm-Documents/blob/master/Manual/zh/Guaranteeing-Message-Processing.md
-[5]: https://github.com/weyo/Storm-Documents/blob/master/Manual/zh/Fault-Tolerance.md
-[6]: https://github.com/weyo/Storm-Documents/blob/master/Manual/zh/Command-Line-Client.md
-[7]: https://github.com/weyo/Storm-Documents/blob/master/Manual/zh/Understanding-The-Parallelism-Of-A-Storm-Topology.md
-[8]: https://github.com/weyo/Storm-Documents/blob/master/Manual/zh/FAQ.md
-[9]: https://github.com/weyo/Storm-Documents/blob/master/Manual/zh/Trident-Tutorial.md
-[10]: https://github.com/weyo/Storm-Documents/blob/master/Manual/zh/Trident-API-Overview.md
-[11]: https://github.com/weyo/Storm-Documents/blob/master/Manual/zh/Trident-State.md
-[12]: https://github.com/weyo/Storm-Documents/blob/master/Manual/zh/Trident-Spouts.md
-[13]: https://github.com/weyo/Storm-Documents/blob/master/Manual/zh/Setting-Up-A-Storm-Cluster.md
-[32]: https://github.com/weyo/Storm-Documents/blob/master/Manual/zh/Setting-Up-A-Development-Environment.md
-[14]: https://github.com/weyo/Storm-Documents/blob/master/Manual/zh/Local-Mode.md
-[15]: https://github.com/weyo/Storm-Documents/blob/master/Manual/zh/Troubleshooting.md
-[16]: https://github.com/weyo/Storm-Documents/blob/master/Manual/zh/Running-Topologies-On-A-Production-Cluster.md
-[17]: https://github.com/weyo/Storm-Documents/blob/master/Manual/zh/Building-Storm-With-Maven.md
-[18]: https://github.com/weyo/Storm-Documents/blob/master/Manual/zh/Serialization.md
-[19]: https://github.com/weyo/Storm-Documents/blob/master/Manual/zh/Common-Topology-Patterns.md
+[3]: /Manual/zh/Configuration.md
+[4]: /Manual/zh/Guaranteeing-Message-Processing.md
+[5]: /Manual/zh/Fault-Tolerance.md
+[6]: /Manual/zh/Command-Line-Client.md
+[7]: /Manual/zh/Understanding-The-Parallelism-Of-A-Storm-Topology.md
+[8]: /Manual/zh/FAQ.md
+[9]: /Manual/zh/Trident-Tutorial.md
+[10]: /Manual/zh/Trident-API-Overview.md
+[11]: /Manual/zh/Trident-State.md
+[12]: /Manual/zh/Trident-Spouts.md
+[13]: /Manual/zh/Setting-Up-A-Storm-Cluster.md
+[32]: /Manual/zh/Setting-Up-A-Development-Environment.md
+[14]: /Manual/zh/Local-Mode.md
+[15]: /Manual/zh/Troubleshooting.md
+[16]: /Manual/zh/Running-Topologies-On-A-Production-Cluster.md
+[17]: /Manual/zh/Building-Storm-With-Maven.md
+[18]: /Manual/zh/Serialization.md
+[19]: /Manual/zh/Common-Topology-Patterns.md
 
-[21]: https://github.com/weyo/Storm-Documents/blob/master/Manual/zh/Using-Non-JVM-Languages-With-Storm.md
-[22]: https://github.com/weyo/Storm-Documents/blob/master/Manual/zh/Distributed-RPC.md
+[21]: /Manual/zh/Using-Non-JVM-Languages-With-Storm.md
+[22]: /Manual/zh/Distributed-RPC.md
 
-[24]: https://github.com/weyo/Storm-Documents/blob/master/Manual/zh/Storm-and-Kestrel.md
+[24]: /Manual/zh/Storm-and-Kestrel.md
 
-[26]: https://github.com/weyo/Storm-Documents/blob/master/Manual/zh/Hooks.md
-[27]: https://github.com/weyo/Storm-Documents/blob/master/Manual/zh/Metrics.md
+[26]: /Manual/zh/Hooks.md
+[27]: /Manual/zh/Metrics.md
 
-[29]: https://github.com/weyo/Storm-Documents/blob/master/Manual/zh/Defining-A-Non-JVM-DSL-For-Storm.md
-[30]: https://github.com/weyo/Storm-Documents/blob/master/Manual/zh/Multilang-Protocol.md
-[31]: https://github.com/weyo/Storm-Documents/blob/master/Manual/zh/Storm-Internal-Implementation.md
+[29]: /Manual/zh/Defining-A-Non-JVM-DSL-For-Storm.md
+[30]: /Manual/zh/Multilang-Protocol.md
+[31]: /Manual/zh/Storm-Internal-Implementation.md

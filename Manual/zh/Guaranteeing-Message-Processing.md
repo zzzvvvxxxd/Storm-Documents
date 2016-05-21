@@ -46,7 +46,7 @@ _collector.emit(new Values("field1", "field2", 3) , msgId);
 
 随后，tuple 会被发送到对应的 bolt 中去，在这个过程中，Storm 会很小心地跟踪创建的消息树。如果 Storm 检测到某个 tuple 被完整处理， Storm 会根据 `Spout` 提供的“消息 id”调用最初发送 tuple 的 `Spout` 任务的 `ack` 方法。对应的，Storm 在检测到 tuple 超时之后就会调用 `fail` 方法。注意，对于一个特定的 tuple，响应（ack）和失败处理（fail）都只会由最初创建这个 tuple 的任务执行。也就是说，及时 `Spout` 在集群中有很多个任务，某个特定的 tuple 也只会由创建它的那个任务——而不是其他的任务——来处理成功或失败的结果。
 
-我们再以 `KestrlSpout` 为例来看看在消息的可靠性处理中 `Spout` 做了什么。在 `KestrlSpout` 从 Kestrel 队列中取出一条消息时，可以看作它“打开”了这条消息。也就是说，这条消息实际上并没有从队列中真正地取出来，而是保持着一个“挂起”状态，等待消息处理完成的信号。在挂起状态的消息不回被发送到其他的消费者中。另外，如果消费者（客户端）断开了连接，所有处于挂起状态的消息都会重新放回到队列中。在消息“打开”的时候 Kestrel 会给客户端同时提供消息体数据和一个唯一的 id。`KestrelSpout` 在使用 `SpoutOutputCollector` 发送 tuple 的时候就会把这个唯一的 id 当作“消息 id”。一段时间之后，在 `KestrelSpout` 的 `ack` 或者 `fail` 方法被调用的时候，`KestrelSpout` 就会通过这个消息 id 向 Kestrel 请求将消息从队列中移除（对应 `ack` 的情况）或者将消息重新放回队列（对应 `fail` 的情况）。
+我们再以 `KestrlSpout` 为例来看看在消息的可靠性处理中 `Spout` 做了什么。在 `KestrlSpout` 从 Kestrel 队列中取出一条消息时，可以看作它“打开”了这条消息。也就是说，这条消息实际上并没有从队列中真正地取出来，而是保持着一个“挂起”状态，等待消息处理完成的信号。在挂起状态的消息不会被发送给其他的消费者。另外，如果消费者（客户端）断开了连接，所有处于挂起状态的消息都会重新放回到队列中。在消息“打开”的时候 Kestrel 会给客户端同时提供消息体数据和一个唯一的 id。`KestrelSpout` 在使用 `SpoutOutputCollector` 发送 tuple 的时候就会把这个唯一的 id 当作“消息 id”。一段时间之后，在 `KestrelSpout` 的 `ack` 或者 `fail` 方法被调用的时候，`KestrelSpout` 就会通过这个消息 id 向 Kestrel 请求将消息从队列中移除（对应 `ack` 的情况）或者将消息重新放回队列（对应 `fail` 的情况）。
 
 ## Storm 的可靠性 API
 
@@ -180,11 +180,11 @@ Acker 实际上并不会直接跟踪 tuple 树。对于一棵包含数万个 tup
 
 
 
-[1]: http://storm.apache.org/documentation/images/tuple_tree.png
-[2]: http://storm.apache.org/javadoc/apidocs/backtype/storm/Config.html#TOPOLOGY_MESSAGE_TIMEOUT_SECS
+[1]: http://storm.apache.org/releases/0.9.6/images/tuple_tree.png
+[2]: http://storm.apache.org/releases/0.9.6/javadocs/backtype/storm/Config.html#TOPOLOGY_MESSAGE_TIMEOUT_SECS
 [3]: http://storm.apache.org/javadoc/apidocs/backtype/storm/spout/ISpout.html
 [4]: http://storm.apache.org/documentation/images/tuple-dag.png
 [5]: http://storm.apache.org/documentation/Transactional-topologies.html
 [6]: http://storm.apache.org/javadoc/apidocs/backtype/storm/Config.html#TOPOLOGY_ACKERS
 [7]: http://storm.apache.org/documentation/images/ack_tree.png
-[8]: https://github.com/weyo/Storm-Documents/blob/master/Manual/zh/Fault-Tolerance.md
+[8]: /Manual/zh/Fault-Tolerance.md
