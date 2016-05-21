@@ -12,8 +12,8 @@
 
 原文资料来源（官方网站）：
 
-~~[http://storm.apache.org/documentation/Documentation.html](http://storm.apache.org/documentation/Documentation.html)~~
-[http://storm.apache.org/releases/0.9.6/Documentation.html](http://storm.apache.org/releases/0.9.6/Documentation.html)
+~~[http://storm.apache.org/documentation/Documentation.html](http://storm.apache.org/documentation/Documentation.html)~~  
+[http://storm.apache.org/releases/0.9.6/index.html](http://storm.apache.org/releases/0.9.6/index.html)
 
 ---
 
@@ -85,7 +85,7 @@
 
 
 [1]: http://storm.apache.org/javadoc/apidocs/index.html
-[2]: https://github.com/weyo/Storm-Documents/blob/master/Manual/zh/Concepts.md
+[2]: /Manual/zh/Concepts.md
 [3]: https://github.com/weyo/Storm-Documents/blob/master/Manual/zh/Configuration.md
 [4]: https://github.com/weyo/Storm-Documents/blob/master/Manual/zh/Guaranteeing-Message-Processing.md
 [5]: https://github.com/weyo/Storm-Documents/blob/master/Manual/zh/Fault-Tolerance.md
